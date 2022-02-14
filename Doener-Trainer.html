@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döner-Trainer</title>
+    <link rel="stylesheet" href="Doenertrainer.css">
+
+    <script src="DoenerTrainer/Main.js"></script>
+    <script src="DoenerTrainer/moveable.js"></script>
+    <script src="DoenerTrainer/kebabhouse.js"></script>
+    
+    <script src="DoenerTrainer/Extra.js"></script>
+    <script src="DoenerTrainer/human.js"></script>
+    <script src="DoenerTrainer/ingredients.js"></script>
+    <script src="DoenerTrainer/Lahmacun.js"></script>
+    <script src="DoenerTrainer/Doener.js"></script>
+    <script src="DoenerTrainer/Yufka.js"></script>
+    <script src="DoenerTrainer/customer.js"></script>
+    <script src="DoenerTrainer/Order.js"></script>
+    <script src="DoenerTrainer/Product.js"></script>
+    <script src="DoenerTrainer/vector.js"></script>
+    <script src="DoenerTrainer/worker.js"></script>
+
+</head>
+
+<body>
+    <body>
+        <form action="">
+            <h1>Döner-Trainer</h1>
+            <div id="form">
+                <fieldset id="Worker">
+                    <legend> Mitarbeiter </legend>
+                    <select name="Worker" id="select">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset id="Costumer">
+                    <legend> Kunden pro Minute</legend>
+                    <select name="Customer" id="select">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </fieldset>
+                <br>
+    
+                <fieldset id="Raw">
+                    <legend> Rohmaterial </legend>
+                    <span id="slider">
+                        <span>
+                    1 Stück
+                    <input type="range" name="Raw" min="1" max="10" step="1" value="1">
+                    10 Stück
+                </span>
+            </span>
+                </fieldset>
+                <br>
+                <fieldset id="Container">
+                    <legend> Behälter </legend>
+                    <span id="slider">
+                        <span>
+                    1 Stück
+                    <input type="range" name="Container" min="1" max="15" step="1" value="1">
+                    15 Stück
+                </span>
+   
+            </span>
+        </fieldset>
+        
+                <br>
+                <fieldset id="Unoccupied">
+                    <legend> Leerlaufzeit pro Kunde</legend>
+                    <select name="Unoccupied" id="select">
+                        <option value="20" selected>20 Sekunden</option>
+                        <option value="40">40 Sekunden</option>
+                        <option value="50">50 Sekunden</option>
+                    </select>
+                </fieldset>
+                <br>
+                <button type="button" id="start">START</button>
+            </div>
+        </form>
+    
+        <div id ="canvas-wrap">
+            <canvas id="canvas" width="800" height="500"></canvas>
+
+        </div>
+        
+<br>
+    <Button type="button" id="orderTomato">Tomaten <br> bestellen</Button>
+    <Button type="button" id="orderCucumber">Gurken <br> bestellen</Button>
+    <Button type="button" id="orderCorn">Mais <br> bestellen</Button>
+    <Button type="button" id="orderMeat">Fleisch <br> bestellen</Button>
+    <Button type="button" id="orderOnion">Zwiebel <br> bestellen</Button>
+    <Button type="button" id="orderCabbage">Rotkraut <br> bestellen</Button>
+
+    <div id="stats"></div>
+</body>
+
+</html>
